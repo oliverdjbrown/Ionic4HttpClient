@@ -24,7 +24,7 @@ export class StudentCreatePage implements OnInit {
  
   submitForm() {
     this.apiService.createItem(this.data).subscribe((response) => {
-      this.router.navigate(['list']);
+      this.router.navigate(['student-list']);
     });
  
   }
